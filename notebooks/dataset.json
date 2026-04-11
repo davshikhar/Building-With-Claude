@@ -1,0 +1,11 @@
+[
+  {
+    "task": "Write a Python function that takes an AWS S3 bucket ARN as input and extracts just the bucket name from it. For example, given 'arn:aws:s3:::my-example-bucket', it should return 'my-example-bucket'."
+  },
+  {
+    "task": "Create a JSON object for an AWS Lambda function configuration that sets the runtime to Python 3.9, timeout to 30 seconds, memory size to 256 MB, and includes an environment variable called 'STAGE' with value 'production'."
+  },
+  {
+    "task": "Write a regex pattern that validates AWS IAM role names according to AWS naming conventions: must be 1-64 characters long, can contain letters, numbers, plus (+), equal (=), comma (,), period (.), at (@), underscore (_), and hyphen (-) characters."
+  }
+]
