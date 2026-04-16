@@ -1,17 +1,49 @@
 [
   {
-    "task": "Create a JSON policy document that allows read-only access to all S3 buckets for a specific IAM user",
-    "format": "json",
-    "solution_criteria": "Must include correct IAM policy structure with Version, Statement array, Effect set to Allow, Action for S3 read operations (s3:GetObject, s3:ListBucket), and Resource specifying all S3 buckets and objects"
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "85 kg",
+      "goal": "Build muscle and maximize strength gains for weightlifting competition",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers one full day with 4-5 meals including pre and post-workout nutrition",
+      "Protein intake targets minimum 1.6g per kg bodyweight (136g+) distributed across meals",
+      "Includes specific meal timing around workout window with carbohydrates and protein for performance and recovery",
+      "Compact format with clear macronutrient breakdown per meal"
+    ],
+    "task_description": "Write a compact, concise one day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) needing protein-focused meals with specific macronutrient ratios and pre/post-workout nutrition windows"
   },
   {
-    "task": "Write a Python function that takes an AWS ARN string and extracts the resource type (e.g., 'user', 'role', 'bucket')",
-    "format": "python",
-    "solution_criteria": "Function must parse ARN format correctly, handle different AWS service ARNs, extract the resource type from the appropriate position in the ARN string, and return the resource type as a string"
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon preparation with carbohydrate loading and optimal hydration for endurance performance",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan totals 3000+ calories with carbohydrates comprising 55-65% of daily intake",
+      "Includes strategic hydration timing before, during, and after training/competition",
+      "Provides 5-6 eating occasions distributed throughout the day",
+      "Compact format with concise descriptions (one page or less)"
+    ],
+    "task_description": "Write a compact, concise one day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring 3000+ calories with emphasis on carbohydrate loading and hydration timing throughout the day"
   },
   {
-    "task": "Create a regex pattern that validates AWS S3 bucket names according to AWS naming rules",
-    "format": "regex",
-    "solution_criteria": "Regex must enforce: 3-63 characters length, lowercase letters/numbers/hyphens only, must start and end with letter or number, no consecutive hyphens, no IP address format (xxx.xxx.xxx.xxx)"
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "75",
+      "goal": "Optimize performance for soccer training and match day with sustained energy for both aerobic endurance and anaerobic sprints",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers one full day with breakfast, lunch, dinner, and snacks that support mixed aerobic/anaerobic performance",
+      "All foods are budget-friendly, commonly available options suitable for an athlete",
+      "Plan is compact and concise (under 400 tokens) with clear meal times and portion guidance"
+    ],
+    "task_description": "Write a compact, concise one day meal plan for a single athlete",
+    "scenario": "Testing with a mixed-sport athlete (soccer player) requiring balanced nutrition for both aerobic and anaerobic performance with realistic, budget-friendly food options"
   }
 ]
