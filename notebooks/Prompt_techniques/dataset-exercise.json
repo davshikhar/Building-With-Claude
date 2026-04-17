@@ -1,0 +1,40 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "This study employs a multi-omics approach integrating transcriptomic profiling via RNA-sequencing, proteomics analysis using liquid chromatography-tandem mass spectrometry (LC-MS/MS), and metabolomic characterization through gas chromatography-mass spectrometry (GC-MS) to elucidate the molecular mechanisms underlying mitochondrial dysfunction in age-related neurodegenerative diseases. We utilized machine learning algorithms, specifically random forest classification and deep neural networks, to identify biomarkers associated with oxidative stress and ATP depletion pathways. Our findings revealed dysregulation of electron transport chain complexes, impaired autophagy-mediated mitophagy, and altered calcium homeostasis, suggesting that targeting NAD+ metabolism and sirtuin signaling may provide therapeutic interventions for cognitive decline and neuroinflammation."
+    },
+    "solution_criteria": [
+      "Captures all major analytical techniques and methodologies mentioned (RNA-sequencing, LC-MS/MS, GC-MS, machine learning approaches)",
+      "Includes domain-specific biological concepts and pathways (mitochondrial dysfunction, oxidative stress, autophagy-mediated mitophagy, electron transport chain)",
+      "Extracts nested topics such as disease context (neurodegenerative diseases, cognitive decline) and therapeutic targets (NAD+ metabolism, sirtuin signaling)",
+      "Produces valid JSON array format with strings as elements"
+    ],
+    "task_description": "\nExtract topics out of a passage of text from a scholarly article into a JSON array of strings\n",
+    "scenario": "Testing with a dense scientific abstract containing technical jargon, methodology terms, and domain-specific concepts to assess handling of specialized terminology and nested topics"
+  },
+  {
+    "prompt_inputs": {
+      "content": "The phenomenology of embodied cognition challenges the Cartesian mind-body dualism that has long dominated Western epistemology. Drawing from phenomenological traditions established by Merleau-Ponty and contemporary cognitive science, scholars argue that consciousness is fundamentally grounded in bodily experience and sensorimotor interaction with the environment. This perspective intersects with poststructuralist critiques of disembodied rationality, feminist philosophy's emphasis on situated knowledge, and neuroscientific findings regarding mirror neurons and proprioception. The implications extend across multiple disciplines: in aesthetics, how we perceive art through embodied sensation; in linguistics, how metaphorical language reflects our physical experience of space and movement; and in ethics, how empathy emerges from our capacity to simulate others' bodily states. These interconnected theoretical frameworks collectively suggest that meaning-making is inseparable from our material existence."
+    },
+    "solution_criteria": [
+      "Extracts all major philosophical and theoretical frameworks mentioned (phenomenology, Cartesian dualism, poststructuralism, feminist philosophy, cognitive science)",
+      "Captures interdisciplinary domains where the theory applies (aesthetics, linguistics, ethics, neuroscience)",
+      "Identifies key conceptual themes (embodied cognition, consciousness, situated knowledge, empathy)",
+      "Recognizes overlapping and interconnected topics without over-fragmenting or over-generalizing"
+    ],
+    "task_description": "\nExtract topics out of a passage of text from a scholarly article into a JSON array of strings\n",
+    "scenario": "Testing with a humanities passage containing abstract concepts and interdisciplinary themes to evaluate extraction of nuanced, overlapping topics"
+  },
+  {
+    "prompt_inputs": {
+      "content": "The study examines neuroplasticity mechanisms in adolescent populations following intensive cognitive training interventions. Participants engaged in working memory exercises over twelve weeks, demonstrating significant improvements in executive function tasks. While the research primarily focuses on memory enhancement, the underlying neural adaptations suggest broader implications for learning capacity and attention regulation. The findings indicate that synaptic pruning and myelination processes, though not directly measured in this study, likely contribute to the observed behavioral changes. Furthermore, the correlation between training intensity and performance gains raises questions about optimal intervention duration and individual variability in neural responsiveness, factors that warrant investigation in future longitudinal studies examining developmental trajectories."
+    },
+    "solution_criteria": [
+      "Includes explicitly stated topics (neuroplasticity, cognitive training, working memory, executive function)",
+      "Distinguishes between directly mentioned topics and inferred themes (synaptic pruning and myelination are mentioned as implicit mechanisms, not explicit study topics)",
+      "Captures core scholarly concepts without over-inferring tangential ideas"
+    ],
+    "task_description": "\nExtract topics out of a passage of text from a scholarly article into a JSON array of strings\n",
+    "scenario": "Testing with a mixed-length passage containing both explicit topic statements and implicit themes requiring inference, to evaluate whether the prompt identifies only directly mentioned topics versus derived ones"
+  }
+]

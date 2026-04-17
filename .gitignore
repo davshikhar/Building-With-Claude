@@ -1,2 +1,7 @@
 .env
 .venv/
+
+notebooks/output.html
+notebooks/output.json
+notebooks/dataset.json
+notebooks/dataset-exercise.json
